@@ -44,9 +44,7 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        $product = collect($productService->listProducts())->filter(function ($item) use ($id) {
-            return $item['id'] == $id;
-        })->first();
+        
     }
 
     /**
